@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries-list</title>
+</head>
+<header>
+<a href="/sorted-list/A">A </a>
+<a href="/sorted-list/B">B </a>
+<a href="/sorted-list/C">C </a>
+<a href="/sorted-list/D">D </a>
+<a href="/sorted-list/E">E </a>
+<a href="/sorted-list/F">F </a>
+<a href="/sorted-list/G">G </a>
+<a href="/sorted-list/H">H </a>
+<a href="/sorted-list/I">I </a>
+<a href="/sorted-list/J">J </a>
+<a href="/sorted-list/K">K </a>
+<a href="/sorted-list/L">L </a>
+<a href="/sorted-list/M">M </a>
+<a href="/sorted-list/N">N </a>
+<a href="/sorted-list/O">O </a>
+<a href="/sorted-list/P">P </a>
+<a href="/sorted-list/Q">Q </a>
+<a href="/sorted-list/R">R </a>
+<a href="/sorted-list/S">S </a>
+<a href="/sorted-list/T">T </a>
+<a href="/sorted-list/U">U </a>
+<a href="/sorted-list/V">V </a>
+<a href="/sorted-list/W">W </a>
+<a href="/sorted-list/X">X </a>
+<a href="/sorted-list/Y">Y </a>
+<a href="/sorted-list/Z">Z </a>
+
+</header>
+<body>
+    
+    <ol>
+    {% for country in countries  %}
+        <li><a href="/country/{{country.country}}">{{country.country}}</a> </li>
+    {% endfor %}
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+</head>
+<body>
+    <div>
+        <h2>Country: {{country.country}}</h2>
+        <p>Lahguages in {{country.country}}:</p>
+        <ol>
+        {% for lang in country.languages  %}
+            <li>{{lang}}</li>
+        {% endfor %}
+        </ol>
+        <br>
+        <a href="/countries-list">To countries list</a>
+
+
+
+    </div>
+</body>
+</html>
